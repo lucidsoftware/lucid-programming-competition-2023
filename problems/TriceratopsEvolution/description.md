@@ -14,7 +14,7 @@ We want to know the probability that any given triceratops of generation $N$ has
 $g_1$ is the probability that any triceratops of generation 1 has the trait.
 $p_0, p_1, p_2$ are the probabilities that a triceratops of the next generation inherits the trait, given zero, one, or two of its parents had the trait respectively.
 ```
-<$N$> <$g_1$> <$p_0$> <$p_1$> <$p_2$>
+<N> <g_1> <p_0> <p_1> <p_2>
 ```
 
 # Constraints
@@ -25,7 +25,7 @@ $p_0, p_1, p_2$ are the probabilities that a triceratops of the next generation 
 # Output
 Output the probability that any given triceratops of generation $N$ has the trait, rounded to 4 decimal places (i.e. 0.275794 => 0.2758). Always print 4 decimal places. For example, 0.5 should be printed as 0.5000
 ```
-<Probability of having trait on generation $N$>
+<Probability of having trait on generation N>
 ```
 
 # Examples
