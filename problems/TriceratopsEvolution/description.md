@@ -9,10 +9,10 @@ Given the probability $g_1$ that any given triceratops of generation 1 has the t
 
 
 # Input
-The input format consists of one integer $N$ along with the four probabilities $g_1, p_0, p_1, p_2$ all on the same line, seprated by space.
-We want to know the probability that any given triceratops of generation $N$ has the trait.
-$g_1$ is the probability that any triceratops of generation 1 has the trait.
-$p_0, p_1, p_2$ are the probabilities that a triceratops of the next generation inherits the trait, given zero, one, or two of its parents had the trait respectively.
+* The input format consists of one integer $N$ along with the four probabilities $g_1, p_0, p_1, p_2$ all on the same line, seprated by space.
+* We want to know the probability that any given triceratops of generation $N$ has the trait.
+* $g_1$ is the probability that any triceratops of generation 1 has the trait.
+* $p_0, p_1, p_2$ are the probabilities that a triceratops of the next generation inherits the trait, given zero, one, or two of its parents had the trait respectively.
 ```
 <N> <g_1> <p_0> <p_1> <p_2>
 ```
