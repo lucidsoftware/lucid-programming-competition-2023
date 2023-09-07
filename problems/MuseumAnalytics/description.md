@@ -20,8 +20,9 @@ N
 - It is guaranteed that there will be just one most beloved dinosaur, i.e., there will be no ties.
 - It is guaranteed the list of beloved dinosaurs submitted by the visitors is valid, i.e., it does not contain any duplicates.
 - 1 <= N <= 10^4
+- 1 <= |the total of number of dinosaurs submitted each visitor| <= 10
 - 1 <= |the total of number of unique dinosaurs| <= 10^4
-- 1 <= |the total of number of dinosaurs submitted by all visitors| <= 10^4
+- 5 <= |the length of the name of a dinosaur| <= 25
 
 
 # Output
