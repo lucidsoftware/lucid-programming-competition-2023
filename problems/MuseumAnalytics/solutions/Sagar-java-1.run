@@ -1,0 +1,4 @@
+#!/bin/bash
+javac $(dirname $0)/Sagar-java-1/Main.java
+java -cp $(dirname $0)/Sagar-java-1 Main
+

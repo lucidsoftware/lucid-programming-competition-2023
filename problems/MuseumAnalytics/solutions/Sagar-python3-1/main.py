@@ -1,5 +1,4 @@
 from collections import Counter
-
 num_responses = int(input())
 responses = [input() for i in range(num_responses)]
 dinosaurs = [dinosaur for response in responses for dinosaur in response.split(',')]

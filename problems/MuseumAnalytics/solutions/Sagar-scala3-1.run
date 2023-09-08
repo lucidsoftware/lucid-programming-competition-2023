@@ -1,0 +1,2 @@
+#!/bin/bash
+scala $(dirname $0)/Sagar-scala3-1/main.scala
