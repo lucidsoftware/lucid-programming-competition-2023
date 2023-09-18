@@ -82,12 +82,12 @@ func calculateMaxSize(world Map, x, y, currentSize, tummy, energy int) int {
 
 		if validMove(newX, newY, world.Rows, world.Cols, world.Visited) {
 			switch tile := world.MapData[newX][newY]; {
-			case tile == ' ':
-				maxSize = max(maxSize, calculateMaxSize(newWorld, newX, newY, currentSize, tummy, energy))
-			case tile == '.':
+			case tile == '.' || tile == '@':
 				maxSize = max(maxSize, calculateMaxSize(newWorld, newX, newY, currentSize, tummy, energy-1))
 			case tile == '~' || tile == '"' && energy > 1:
 				maxSize = max(maxSize, calculateMaxSize(newWorld, newX, newY, currentSize, tummy, energy-2))
+			case tile == '*' && energy > 2:
+				maxSize = max(maxSize, calculateMaxSize(newWorld, newX, newY, currentSize, tummy, energy-3))
 			case tile >= 'A' && tile <= 'Z' && int(tile)-64 <= currentSize:
 
 				// Eat the dino
@@ -103,7 +103,7 @@ func calculateMaxSize(world Map, x, y, currentSize, tummy, energy int) int {
 
 				// Update the map
 				duplicate := Clone(world.MapData)
-				duplicate[newX][newY] = ' '
+				duplicate[newX][newY] = '.'
 
 				// Clear visited
 				// Make the initial visited array

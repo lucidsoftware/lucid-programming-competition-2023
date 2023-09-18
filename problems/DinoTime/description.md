@@ -36,10 +36,10 @@ this land, eating as much as you can, and plan your path accordingly to prevent 
      If you are a dinosaur of size 5, you can eat 5 dinos of size 1, or 2 dinos of size 2 and 3, or 1 dinosaur of size 5.
   - Excess dinosaurs eaten stay in your tummy, meaning their values carry over.
 
-- Dinos disappear when they are eaten, leaving an empty space `" "` behind
+- Dinos disappear when they are eaten, leaving dry ground `.` behind
 - Your max energy is the equal to the size of your dinosaur
 - If you can't find anything to eat, your dinosaur will die.
-  - Moving tiles takes between 0 - 3 energy, depending on the tile,
+  - Moving tiles takes between 1 - 3 energy, depending on the tile,
 - Not all land is passable, meaning that you must find your way around the rocks and trees
 
 ## Dino-time Legend
@@ -49,9 +49,9 @@ this land, eating as much as you can, and plan your path accordingly to prevent 
 | `@`           | You, a tiny little dinosaur of size 1                                               |
 | `A-Z`         | Other dinos to be eaten , size corresponds to the letter: A -> 1, B-> 2, ... Z-> 26 |
 | `#`, `^`, `&` | Rocks and trees, cannot traverse                                                    |
-| `~`, `"`      | rivers and tall grass, takes 2 energy to traverse                                    |
+| `~`, `"`      | rivers and tall grass, takes 2 energy to traverse                                   |
+| `*`           | spiky bushes, take 3 energy to navigate                                             |
 | `.`           | dry ground, takes 1 energy to traverse                                              |
-| ` `           | empty space, takes no energy to traverse                                            |
 
 # Input
 
@@ -70,29 +70,28 @@ The following contains 5 rows and 5 columns
 ABA~C
 ```
 
-The following contains 12 rows and 14 columns
+The following contains 10 rows and 8 columns
 
 ```
-12,14
-..............
-.@...       ..
-......      ..
-.........   ..
-~~...^^...A...
-~~...^^...A...
-~~........B...
-.....CDC... ..
-..........  ..
-."""....    ..
-.....       ..
-..............
+10,8
+........
+.@......
+........
+........
+~~...^^.
+~~...^^.
+~~......
+.....CDC
+........
+."""....
 ```
 
 # Constraints
 
 - Dinosaurs can only move orthogonally, no diagonal movements. Square roots haven't been invented yet.
-- If you start a move with 0 energy, then it's game over
-- Every board has a starting dino, no need to handle malformed input
+- If you start a move with 0 energy, then you die of starvation
+- Every board has a starting dino and all boards are valid, no need to handle malformed input
+- Boards will never exceed (10, 10)
 
 # Output
 
@@ -102,7 +101,22 @@ Your problem output should be the maximum possible size for your dinosaur before
 
 The first 2 tests are examples.
 
+```
+4,4
 @....
 A....
 B....
 C....
+```
+
+Output: `5`
+
+```
+4,4
+@..~.
+A..~.
+.D.~~
+BD..~
+```
+
+Output: `3`

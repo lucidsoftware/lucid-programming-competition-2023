@@ -1,0 +1,2 @@
+#!/bin/bash
+go run $(dirname $0)/go/main.go
