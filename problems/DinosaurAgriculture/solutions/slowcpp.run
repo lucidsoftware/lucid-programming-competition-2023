@@ -1,3 +1,3 @@
 #!/bin/bash
-g++ -std=c++17 $(dirname $0)/slowcpp/main.cpp -o $(dirname $0)/slowcpp/main.out
-$(dirname $0)/slowcpp/main.out
+g++ -std=c++17 $(dirname $0)/slowcpp/main.cpp -o $(dirname $0)/slowcpp/main.bin
+$(dirname $0)/slowcpp/main.bin
