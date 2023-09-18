@@ -1,5 +1,5 @@
 # Dino Chess
-It has been a few hundred years but the chess developers have decided to finally update the game by adding a new piece, the dino. The dino can move similarly to the king in eight directions but unlike the king it moves `m` squares (but not less than m squares) and can jump over other pieces. 
+It has been a few hundred years but the chess developers have decided to finally update the game by adding a new piece, the dino. The dino can move similarly to the king in eight directions but unlike the king it moves `m` squares (but not less than `m` squares) and can jump over other pieces. 
 
 With the addition of the new piece folks have started thinking about how this piece will interact with the board and the question of what is the maximum amount of non-attacking dinos that can be placed on an `n` x `n` board is asked. A non-attacking dino is one such that none of the squares it attacks occupy another dino. 
 
