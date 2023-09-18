@@ -5,7 +5,6 @@
 *.zip
 *.swp
 *.iml
-*.out
 .idea
 .npm
 .npm-install
