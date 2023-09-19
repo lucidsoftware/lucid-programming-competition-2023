@@ -20,9 +20,9 @@ Using this information, determine the shortest path from vertex 1 to vertex $n$ 
 
 
 # Input
-* You are given space-separate integers $n, m, f$ denoting the number of vertices, number of edges, and necessary amount of food respectively.
-* Next, you are given a line with $n$ space-separated integers $f_1, f_2, \dots, f_n$, each representing the amount of food $f_i$ at vertex $i$. 
-* Finally, you are given $m$ lines each containing two space-separated integers $i, j$ such that $i < j$ and vertex $i$ has an edge going into vertex $j$ (but $j$ does not have an edge going into $i$).
+* You are given space-separate integers $n, m, f$ denoting the number of vertices, number of edges, and necessary amount of food respectively
+* Next, you are given a line with $n$ space-separated integers $f_1, f_2, \dots, f_n$, each representing the amount of food $f_i$ at vertex $i$
+* Finally, you are given $m$ lines each containing two space-separated integers $i, j$ such that $i < j$ and vertex $i$ has an edge going into vertex $j$ (but $j$ does not have an edge going into $i$)
 
 ```
 <n> <m> <f>
@@ -37,10 +37,10 @@ Using this information, determine the shortest path from vertex 1 to vertex $n$ 
 * The number of vertices $n$ is between $2 \leq n \leq 250$
 * The number of edges $m$ is between $1 \leq m \leq 15000$
 * The amount of food required $f$ is between $0 \leq f \leq 5000$
-* If an edge goes from vertex $i$ to vertex $j$, it cannot be used to travel from $j$ to $i$.
-* Any edge from a vertex $i$ must go to some vertex $j$ such that $j > i$.
+* If an edge goes from vertex $i$ to vertex $j$, it cannot be used to travel from $j$ to $i$
+* Any edge from a vertex $i$ must go to some vertex $j$ such that $j > i$
 * No edge appears more than once
-* There will always be at least one path from vertex 1 to vertex $n$ that collects $f$ food.
+* There will always be at least one path from vertex 1 to vertex $n$ that collects $f$ food
 
 # Output
 Output the length (edge count) of the shortest path from the starting point (vertex $1$) to the high ground (vertex $n$) such that the allosaurus collects at least $f$ food.
