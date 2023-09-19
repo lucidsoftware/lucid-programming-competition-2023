@@ -16,3 +16,8 @@ node_modules/
 leaderboard/*.js
 .DS_Store
 .vscode
+
+# Scala
+.metals
+.scala-build
+*.jar
