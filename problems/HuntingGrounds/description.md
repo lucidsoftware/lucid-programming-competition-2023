@@ -2,10 +2,11 @@
 T-Rex divvy up their hunting grounds into rectangular plots each day.
 The map of the hunting grounds is an n by n grid.
 Each grid cell is assigned a hunting value and the hunting value of a plot is the sum of the cells it covers.
-Terry is hungry after escaping the shattered plains and wants to get a good plot.
+Rexy is hungry after escaping the shattered plains and wants to get a good plot.
 He will ask you for the total hunting value of many different rectangular plots.
 
-He will give you the (y, x) coordinates of the top left and bottom right corners of the rectangle he is interested in.
+Rexy will give you the (y, x) coordinates of the top left and bottom right corners of the rectangle he is interested in.
+He chose the order y then x because in most dinosaur programming languages you index a 2D array as grid[y][x].
 The coordinates are inclusive and 1 indexed.
 The origin, (1, 1), is in the top left.
 
@@ -27,7 +28,7 @@ Your output should have q lines (one for each query).
 Each line should have the sum total hunting value of that rectangle of the grid.
 
 ## Examples
-The first 2 tests will be these examples.
+These examples will be the first tests.
 
 ### Example 0
 #### Input
