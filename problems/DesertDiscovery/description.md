@@ -1,8 +1,8 @@
 # Desert Discovery
 
-You are a paleontologist turned programmer working at a prolific new dig site in the Western United States.
+You are a paleontologist-turned-programmer working at a prolific new dig site in the Western United States.
 Each of the fossils that is unearthed requires careful and painstaking cleaning and inspection.
-For each fossil, a specialist has recorded key characteristics and qualitative attributes of the fossil and has assigned it a unique identifer.
+For each fossil, a specialist has recorded key characteristics and qualitative attributes of the fossil and has assigned it a unique identifier.
 Your task is to use these observation records to automatically classify each fossil into its most likely species, or flag it as belonging to a hitherto undiscovered species.
 
 You will be given a list of known common dinosaur species in the area and the key attributes of fossils known to belong to each of those species.
@@ -60,7 +60,7 @@ Then, for each fossil, you will receive the number of observed attributes, follo
 
 # Output
 For each fossil, output the name of the species that has the highest likelihood score.
-However, if no species has a likelihood score of 50 or above, you should instead output `Possible New Discovery`.
+However, if no species has a likelihood score of 50 or greater, you should instead output `Possible New Discovery`.
 
 
 ```
