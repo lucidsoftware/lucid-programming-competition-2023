@@ -50,11 +50,11 @@ Then, for each fossil, you will receive the number of observed attributes, follo
 ```
 
 # Constraints
-* The total number of species will be between 1 and 10,000.
-* The total number of fossils will be between 1 and 10,000.
+* The total number of species will be between 1 and 1,000.
+* The total number of fossils will be between 1 and 1,000.
 * The species name and attribute names will consist of alphanumeric characters and may contain spaces
 * The species name and attribute names will be no longer than 250 characters in length
-* The number of attributes for a species or fossil will be between 1 and 10,000
+* The number of attributes for a species or fossil will be between 1 and 1,000
 * There will be no "ties" for the most likely species. Specifically if there exists any species with a likelihood score greater than or equal to 50, then there will exist exactly one species which has the largest likelihood score.
 * Species names will be unique.
 
