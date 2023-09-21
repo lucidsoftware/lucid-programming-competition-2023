@@ -1,0 +1,3 @@
+#!/bin/bash
+g++ -std=c++17 $(dirname $0)/Sagar-cpp-1/main.cpp -o $(dirname $0)/Sagar-cpp-1/main.bin
+$(dirname $0)/Sagar-cpp-1/main.bin
