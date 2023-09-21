@@ -16,6 +16,7 @@ node_modules/
 leaderboard/*.js
 .DS_Store
 .vscode
+go.work
 
 # Scala
 .metals
