@@ -17,7 +17,7 @@ n
 
 Where **n is the length of the array**.
 
-# Ouput
+# Output
 
 Output an integer which represents the number of place Bob can do pushups (as defined above)
 

@@ -18,7 +18,7 @@ The remaining lines of input will each contain a single integer representing the
 A single integer: the minimum difference between the smallest and largest territories handed out while still meeting the requirement for left over land.
 
 ## Constraints
-0 < N (number of pieces of land) <= 1000000
+0 < N (number of pieces of land) <= 1,000,000
 
 0 < D (number of dinosaurs) <= N
 

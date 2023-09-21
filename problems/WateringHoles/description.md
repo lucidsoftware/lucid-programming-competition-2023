@@ -58,8 +58,8 @@ bobbybrontosaurus 3
 ## Explanation
 - `timmytrex` enters the park and moves to watering hole 1
 - `allyallosaurus` enters the park and moves to watering hole 1
-- `timmytrex` leaves watering hole 1 and moves to watering hole 2
+- `timmytrex` leaves watering hole 1 and moves to watering hole 3
 - `allyallosaurus` leaves the park
-- `bobbybrontosaurus` enters the park and moves to watering hole 2
+- `bobbybrontosaurus` enters the park and moves to watering hole 3
 
-At the end of the day, no dinosaurs are left at watering hole `1`, and 2 dinosaurs are left at watering hole `2`: `bobbybrontosaurus` and `timmytrex`. Note that there is no watering hole with the number 2, since it did not appear in the input.
+At the end of the day, no dinosaurs are left at watering hole `1`, and 2 dinosaurs are left at watering hole `3`: `bobbybrontosaurus` and `timmytrex`. Note that there is no watering hole with the number 2, since it did not appear in the input.****
