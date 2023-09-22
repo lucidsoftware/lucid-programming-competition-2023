@@ -22,21 +22,20 @@ Born as a teeny lizard in a dino-eat-dino world, you have only one goal: Become 
 +-----------------------------------+
 ```
 
-Given an ascii map full of dinos and obstacles, calculate the theoretical largest your dino can become. You must traverse
-this land, eating as much as you can, and plan your path accordingly to prevent starvation.
+Given an ascii map full of dinosaurs and obstacles, calculate the theoretical largest your dino can become. You must traverse this land, eating as much as you can, and plan your path accordingly to prevent starvation.
 
 ## Rules of Dino-land
 
 - You start as `@` with a dino size of 1
 - You can only eat dinosaurs with a size less than or equal to your current size
   - You cannot eat dinosaurs larger than yourself, or they'd eat you
-- In order to grow by one, you must eat a total size of dinos equal to your current size
+- In order to grow by one, you must eat a total size of dinosaurs equal to your current size
 
   - Example: \
-     If you are a dinosaur of size 5, you can eat 5 dinos of size 1, or 2 dinos of size 2 and 3, or 1 dinosaur of size 5.
+     If you are a dinosaur of size 5, you can eat five dinosaurs of size 1, or two dinosaurs of sizes 2 and 3, or one dinosaur of size 5.
   - Excess dinosaurs eaten stay in your tummy, meaning their values carry over.
 
-- Dinos disappear when they are eaten, leaving dry ground `.` behind
+- Dinosaurs disappear when they are eaten, leaving dry ground `.` behind
 - Your max energy is the equal to the size of your dinosaur
 - If you can't find anything to eat, your dinosaur will die.
   - Moving tiles takes between 1 - 3 energy, depending on the tile,
@@ -44,14 +43,14 @@ this land, eating as much as you can, and plan your path accordingly to prevent 
 
 ## Dino-time Legend
 
-| char          | description                                                                         |
-| ------------- | ----------------------------------------------------------------------------------- |
-| `@`           | You, a tiny little dinosaur of size 1                                               |
-| `A-Z`         | Other dinos to be eaten , size corresponds to the letter: A -> 1, B-> 2, ... Z-> 26 |
-| `#`, `^`, `&` | Rocks and trees, cannot traverse                                                    |
-| `~`, `"`      | rivers and tall grass, takes 2 energy to traverse                                   |
-| `*`           | spiky bushes, take 3 energy to navigate                                             |
-| `.`           | dry ground, takes 1 energy to traverse                                              |
+| char          | description                                                                            |
+| ------------- | -------------------------------------------------------------------------------------- |
+| `@`           | You, a tiny little dinosaur of size 1                                                  |
+| `A-Z`         | Other dinosaurs to be eaten, size corresponds to the letter: A -> 1, B-> 2, ... Z-> 26 |
+| `#`, `^`, `&` | Rocks and trees, cannot traverse                                                       |
+| `~`, `"`      | rivers and tall grass, takes 2 energy to traverse                                      |
+| `*`           | spiky bushes, take 3 energy to navigate                                                |
+| `.`           | dry ground, takes 1 energy to traverse                                                 |
 
 # Input
 
