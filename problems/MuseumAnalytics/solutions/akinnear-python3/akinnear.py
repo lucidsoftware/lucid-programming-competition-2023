@@ -2,7 +2,7 @@ n = eval(input())
 
 favorites = {}
 for i in range(n):
-    response = input().split()
+    response = input().split(',')
     for dino in response:
         if dino in favorites:
             favorites[dino] += 1
