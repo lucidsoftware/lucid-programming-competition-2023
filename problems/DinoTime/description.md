@@ -36,6 +36,7 @@ Given an ascii map full of dinosaurs and obstacles, calculate the theoretical la
   - Excess dinosaurs eaten stay in your tummy, meaning their values carry over.
 
 - Dinosaurs disappear when they are eaten, leaving dry ground `.` behind
+- Whenever you eat a dinosaur, your energy resets to the max.
 - Your max energy is the equal to the size of your dinosaur
 - If you can't find anything to eat, your dinosaur will die.
   - Moving tiles takes between 1 - 3 energy, depending on the tile,
@@ -91,6 +92,7 @@ The following contains 10 rows and 8 columns
 - If you start a move with 0 energy, then you die of starvation
 - Every board has a starting dino and all boards are valid, no need to handle malformed input
 - Boards will never exceed (10, 10)
+- Your dino cannot walk more than 10 steps, as 11 hasn't been invented yet
 
 # Output
 
