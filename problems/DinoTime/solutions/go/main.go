@@ -50,7 +50,7 @@ func main() {
 		Visited: visited,
 		Rows:    rows,
 		Cols:    cols,
-	}, startX, startY, 1, 1, 1)
+	}, startX, startY, 1, 0, 1)
 	fmt.Println(maxSize)
 }
 
@@ -91,13 +91,17 @@ func calculateMaxSize(world Map, x, y, currentSize, tummy, energy int) int {
 			case tile >= 'A' && tile <= 'Z' && int(tile)-64 <= currentSize:
 
 				// Eat the dino
-				dinoSize := int(tile) - 64
-				if dinoSize <= currentSize {
-					tummy += dinoSize
+				var newSize = currentSize
+				var newTummy = tummy
 
-					for tummy > currentSize {
-						tummy -= currentSize
-						currentSize++
+				foodSize := int(tile) - 64
+				if foodSize <= currentSize {
+
+					newTummy += foodSize
+
+					if newTummy >= newSize {
+						newTummy = newTummy - newSize
+						newSize = newSize + 1
 					}
 				}
 
@@ -118,7 +122,7 @@ func calculateMaxSize(world Map, x, y, currentSize, tummy, energy int) int {
 					MapData: duplicate,
 					Rows:    world.Rows,
 					Cols:    world.Cols,
-				}, newX, newY, currentSize, tummy, currentSize))
+				}, newX, newY, newSize, newTummy, newSize))
 			}
 		}
 	}
