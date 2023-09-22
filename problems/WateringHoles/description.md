@@ -28,7 +28,7 @@ bobbybrontosaurus 2
 * There will be at most 10,000 logs
 
 # Output
-Your output should be the list of dinosaurs left at each watering hole at the end of the day. The watering holes should be sorted in ascending numerical order. The dinosaurs at each watering hole should be printed as a space separated list in ascending alphabetical order. If no dinosaurs at left at a given watering hole, output `n/a`.
+Your output should be the list of dinosaurs left at each watering hole at the end of the day. The watering holes should be sorted in ascending numerical order. The dinosaurs at each watering hole should be printed as a space separated list in ascending alphabetical order. If no dinosaurs are left at a given watering hole, output `n/a`.
 
 Here is the output for the example given above:
 
