@@ -19,14 +19,14 @@ clade.
 - The ancestry relationships given will form a single, rooted tree.
   - There are no cycles.
   - Every clade, expect for the root, will have exactly one ancestor. (No test case will have anastomosis.)
-  - Any two clades, except for the root, in the tree will have exactly one most recent common ancestor in the tree.
-- Neither of the two clades named at the end of the input will be an ancestor of the other.
+  - Any two clades, except for the root, will have exactly one most recent common ancestor in the tree.
+- Neither of the two clades named at the end of the input will be an ancestor, direct or indirect, of the other.
 
 # Output
 Output a single line with the name of the clade that is the most recent common ancestor of the two dinosaurs named at the end of the input.
 
-- A clade is a common ancestor if it is an ancestor of both clade named at the end of the input.
+- A clade is a common ancestor if it is an ancestor of both clades named at the end of the input.
 - A clade is the most recent common ancestor if is a common ancestor and also not an ancestor of any other common ancestor.
 
-# Example
+# Examples
 The first 4 tests are examples.
