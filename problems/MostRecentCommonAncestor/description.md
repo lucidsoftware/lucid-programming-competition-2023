@@ -16,7 +16,10 @@ clade.
 
 # Constraints
 - 1 <= N <= 1,000
-- The ancestry relationships given will form a single, rooted tree (there are no cycles and any two clades in the tree will have a single most recent common ancestor in the tree).
+- The ancestry relationships given will form a single, rooted tree.
+  - There are no cycles.
+  - Every clade, expect for the root, will have exactly one ancestor. (No test case will have anastomosis.)
+  - Any two clades, except for the root, in the tree will have exactly one most recent common ancestor in the tree.
 - Neither of the two clades named at the end of the input will be an ancestor of the other.
 
 # Output
