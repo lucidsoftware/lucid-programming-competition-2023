@@ -5,8 +5,9 @@ Every time a dinosaur moves to a new watering hole or leaves the park, they regi
 
 # Input
 The input will consist of a positive integer n, indicating the number of logs. Next will follow n lines. Each line will be 1 of the following 2 formats:
+
 1. `timmytrex 2`, meaning the dinosaur named `timmytrex` moved to watering hole `2`.
-2. `timmytrex 0`, meaning the dinosaur named `timmytrex` left the park. Note that `0` means the dinosaur leaves the park.
+2. `timmytrex 0`, meaning the dinosaur named `timmytrex` left the park.
 
 Here is an example input:
 
@@ -62,4 +63,4 @@ bobbybrontosaurus 3
 - `allyallosaurus` leaves the park
 - `bobbybrontosaurus` enters the park and moves to watering hole 3
 
-At the end of the day, no dinosaurs are left at watering hole `1`, and 2 dinosaurs are left at watering hole `3`: `bobbybrontosaurus` and `timmytrex`. Note that there is no watering hole with the number 2, since it did not appear in the input.****
+At the end of the day, no dinosaurs are left at watering hole `1`, and 2 dinosaurs are left at watering hole `3`: `bobbybrontosaurus` and `timmytrex`. Note that there is no watering hole with the number 2, since it did not appear in the input.

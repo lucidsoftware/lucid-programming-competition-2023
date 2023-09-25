@@ -11,26 +11,20 @@ How many places does Bob have to do pushups?
 The input will be formatted in the following way:
 
 ```
-n
-10 6 2 3 1
+<N>
+<H_1> <H_2> ... <H_N>
 ```
 
-Where **n is the length of the array**.
+where $N$ is the length of the array
 
 # Output
 
 Output an integer which represents the number of place Bob can do pushups (as defined above)
 
-```
-2
-```
-
 # Constraints
 
-```
-0 < n <= 10000
-0 <= terrain[i] <= 10000
-```
+- $0 < n \leq 10^4$
+- $0 \leq terrain[i] \leq 10^4$
 
 # Examples
 

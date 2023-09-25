@@ -19,10 +19,10 @@ The input begins with two integers separated by a space corresponding to the (x,
 
 ## Constraints
 * No dinosaurs will have the same (x, y) position
-* No dinosaur will have the same (x, y) postition as the bonfire
+* No dinosaur will have the same (x, y) position as the bonfire
 * All given positions will be integer values
-* The number of dinosaurs will be between 1 and 10000 (inclusive)
-* The x and y coordinates of the bonfire and dinosaurs will be between -1,000,000 and 1,000,000 (inclusive)
+* The number of dinosaurs will be between 1 and $10^4$ (inclusive)
+* The x and y coordinates of the bonfire and dinosaurs will be between $-10^6$ and $10^6$ (inclusive)
 
 ## Output
 

@@ -11,11 +11,11 @@ Your colleagues at the Prehistoric Relics Museum are making an effort to group d
 <Second>
 ```
 
-The first line contains a single positive integer N. The following N lines contain the names of two dinosaur clades (groups or types), separated by spaces and hyphens as depicted above. These lines indicate that the clade on the left is the immediate ancestor of the clade on the right. The next (and last) two lines each contain the name of a single
+The first line contains a single positive integer $N$. The following $N$ lines contain the names of two dinosaur clades (groups or types), separated by spaces and hyphens as depicted above. These lines indicate that the clade on the left is the immediate ancestor of the clade on the right. The next (and last) two lines each contain the name of a single
 clade.
 
 # Constraints
-- 1 <= N <= 1,000
+- $1 \leq N \leq 1000$
 - The ancestry relationships given will form a single, rooted tree.
   - There are no cycles.
   - Every clade, expect for the root, will have exactly one ancestor. (No test case will have anastomosis.)

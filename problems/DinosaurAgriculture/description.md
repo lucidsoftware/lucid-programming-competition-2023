@@ -4,8 +4,8 @@ Stan the Stegosaurus has become tired of foraging for food all the time, and wan
 
 # Input
 
-The first line of input contains three integers, H, W, and n, the height and width of Stan's garden, and how many planter boxes he has.
-The next n lines each contain two integers h and w, the height and width of one of Stan's planter boxes.
+The first line of input contains three integers, $H$, $W$, and $N$, the height and width of Stan's garden, and how many planter boxes he has.
+The next $N$ lines each contain two integers $h$ and $w$, the height and width of one of Stan's planter boxes.
 
 # Output
 
@@ -13,11 +13,11 @@ Output two integers on a single line, the number of planter boxes and the amount
 
 # Constraints
 
-* 1 <= H, W <= 12
-* 1 <= h <= H
-* 1 <= w <= W
-* 0 <= n < 20
-* 1 <= H * W <= 12
+* $1 \leq H, W \leq 12$
+* $1 \leq h \leq H$
+* $1 \leq w \leq W$
+* $0 \leq N \leq 20$
+* $1 \leq H \times W \leq 12$
 * Planting boxes must be placed in Stan's garden axis-aligned and on unit lines, and can not be rotated.
 
 # Examples

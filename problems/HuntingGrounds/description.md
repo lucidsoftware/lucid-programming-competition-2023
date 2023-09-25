@@ -1,30 +1,23 @@
 # Hunting Grounds
-T-Rex divvy up their hunting grounds into rectangular plots each day.
-The map of the hunting grounds is an n by n grid.
-Each grid cell is assigned a hunting value and the hunting value of a plot is the sum of the cells it covers.
-Rexy is hungry after escaping the shattered plains and wants to get a good plot.
-He will ask you for the total hunting value of many different rectangular plots.
+T-Rex divvy up their hunting grounds into rectangular plots each day. The map of the hunting grounds is an $N$ by $N$ grid. Each grid cell is assigned a hunting value and the hunting value of a plot is the sum of the cells it covers. Rexy is hungry after escaping the shattered plains and wants to get a good plot. He will ask you for the total hunting value of many different rectangular plots.
 
-Rexy will give you the (y, x) coordinates of the top left and bottom right corners of the rectangle he is interested in.
-He chose the order y then x because in most dinosaur programming languages you index a 2D array as grid[y][x].
-The coordinates are inclusive and 1 indexed.
-The origin, (1, 1), is in the top left.
+Rexy will give you the ($y$, $x$) coordinates of the top left and bottom right corners of the rectangle he is interested in. He chose the order $y$ then $x$ because in most dinosaur programming languages you index a 2D array as `grid[y][x]`. The coordinates are inclusive and 1 indexed. The origin, ($1$, $1$), is in the top left.
 
 ## Input
-The first line of input will have two integers, n and q, the dimension of the nXn hunting grounds grid and the number of queries Terry will give you.
-The next n lines will each have n space separated integers, m. This is the hunting grid.
-The next q lines will each have 4 space separated integers, y1 x1 y2 x2, the coordinates of the query's rectangle corners.
+- The first line of input will have two integers, $N$ and $Q$, the dimension of the $N \times N$ hunting grounds grid and the number of queries Terry will give you.
+- The next $N$ lines will each have $N$ space separated integers, $G_{ij}$. This is the hunting grid.
+- The next $Q$ lines will each have 4 space separated integers, `y1 x1 y2 x2`, the coordinates of the query's rectangle corners.
 
 ## Constraints
-* 1 <= n <= 1,000
-* 1 <= q <= 100,000
-* 0 <= m <= 1,000
-* 1 <= x1, y1 <= x2, y2 < n
+* $1 \leq N \leq 1000$
+* $1 \leq Q \leq 10^5$
+* $0 \leq G_{ij} \leq 1000$
+* $1 \leq x1, y1 \leq x2, y2 < N$
 
-Note, the constraints on n and m imply the total sum of a grid should never exceed 1 billion.
+Note, the constraints on $N$ and $M$ imply the total sum of a grid should never exceed 1 billion.
 
 ## Output
-Your output should have q lines (one for each query).
+Your output should have $Q$ lines (one for each query).
 Each line should have the sum total hunting value of that rectangle of the grid.
 
 ## Examples
@@ -77,7 +70,7 @@ The third query, (3, 5) to (6, 6), is this rectangle in the bottom right with su
 7
 ```
 #### Explanation
-This 1X1 grid is the smallest possible.
+This 1x1 grid is the smallest possible.
 This is the only query possible on a 1X1 grid.
 
 ### Example 2

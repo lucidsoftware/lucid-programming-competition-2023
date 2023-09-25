@@ -1,30 +1,25 @@
 # Problem Statement
 
-Many dinosaurs survive by eating other dinosaurs, in this problem we want to determine the longest chain of dinosaurs from herbivore to apex predator. 
+Many dinosaurs survive by eating other dinosaurs, in this problem we want to determine the longest chain of dinosaurs from herbivore to apex predator.
 
 # Input
 The input will be formatted in the following way:
 ```
-n
+N
 A <- B, C
-....
 D <- F
+....
+{predator} <- {list of preys separated by ", "}
 ```
 
-Where **n is the number of lines in the input file** and the dinosaur before the arrow is the predator of the dinosaurs after the arrow.
+Where $N$ is the number of lines in the input and the dinosaur before the arrow is the predator of the dinosaurs after the arrow.
 
 # Output
-Output the length of the longest chain. ex:
-
-```
-5
-```
+Output the length of the longest chain
 
 # Constraints
-```
-0 < n <= 100
-Inputs will not have cycles
-```
+- $0 < N \leq 100$
+- Inputs will not have cycles
 
 # Examples
 

@@ -3,30 +3,29 @@ In the historic city of South Jordan, an extraordinary abundance of dinosaur fos
 
 
 # Input
-The first line contains the number of responses `N`.  
-Each of the next `N` lines contain a list of dinosaur names of arbitrary size, separated by comma `,`.  
+The first line contains the number of responses $N$.
+Each of the next $N$ lines contain a list of dinosaur names of arbitrary size, separated by comma `,`.
 Note: The dinosaur names may contain lowercase and uppercase letters, spaces, and hyphens.
 
 ```
 N
-<dinosaur 1>,<dinosaur 2>,<dinosaur 3>
-<dinosaur 1>,<dinosaur 2>
-<dinosaur 1>,<dinosaur 2>,<dinosaur 3>,...<dinosaur 10>
+<dinosaur 1>,<dinosaur 2>,...<dinosaur X>
+<dinosaur 1>,<dinosaur 2>,...<dinosaur Y>
 ...
-<dinosaur 1>
+<dinosaur 1>,<dinosaur 2>,...<dinosaur Z>
 ```
 
 # Constraints
 - It is guaranteed that there will be just one most beloved dinosaur, i.e., there will be no ties.
 - It is guaranteed the list of beloved dinosaurs submitted by the visitors is valid, i.e., it does not contain any duplicates.
-- 1 <= N <= 10^4
-- 1 <= |the total of number of dinosaurs submitted by each visitor| <= 10
-- 1 <= |the total of number of unique dinosaurs| <= 10^4
-- 5 <= |the length of the name of a dinosaur| <= 25
+- $1 \leq N \leq 10^4$
+- $1 \leq |the total of number of dinosaurs submitted by each visitor| \leq 10$
+- $1 \leq |the total of number of unique dinosaurs| \leq 10^4$
+- $5 \leq |the length of the name of a dinosaur| \leq 25$
 
 
 # Output
-On the first line, print the name of the most beloved dinosaur.  
+On the first line, print the name of the most beloved dinosaur.
 On the second line, print the number of people it is beloved for, i.e., the number of votes.
 ```
 <beloved dinosaur>
