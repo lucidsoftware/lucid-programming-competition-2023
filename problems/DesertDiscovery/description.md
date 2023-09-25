@@ -39,12 +39,11 @@ Then, for each fossil, you will receive the number of observed attributes, follo
 <Attribute>
 ...
 <Total Number of Fossils>
-<Fossil A Num Attributes>
+<Fossil X Num Attributes>
 <Attribute>
 <Attribute>
 ...
-<Fossil B Num Attributes>
-<Num Attributes>
+<Fossil Y Num Attributes>
 <Attribute>
 <Attribute>
 ```
